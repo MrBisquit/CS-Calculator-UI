@@ -13,7 +13,8 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <TextBox Grid.Row="0" FontSize="35" FontWeight="DemiBold"
-                 Name="TextBox" BorderThickness="0">0</TextBox>
+                 Name="TextBox" BorderThickness="0"
+                 IsReadOnly="True">0</TextBox>
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
@@ -82,20 +83,25 @@
                     Name="Backspace" Click="Backspace_Click"></Button>
             <Button FontSize="35" Grid.Column="3"
                     Grid.Row="1" BorderThickness="0" Content="÷"
-                    Background="#EEEEEE"></Button>
+                    Background="#EEEEEE"
+                    Name="DivideButton" Click="DivideButton_Click"></Button>
             <Button FontSize="35" Grid.Column="3"
                     Grid.Row="2" BorderThickness="0" Content="×"
-                    Background="#EEEEEE"></Button>
+                    Background="#EEEEEE"
+                    Name="TimesButton" Click="TimesButton_Click"></Button>
             <Button FontSize="35" Grid.Column="3"
                     Grid.Row="3" BorderThickness="0" Content="−"
-                    Background="#EEEEEE"></Button>
+                    Background="#EEEEEE"
+                    Name="MinusButton" Click="MinusButton_Click"></Button>
             <Button FontSize="35" Grid.Column="3"
                     Grid.Row="4" BorderThickness="0" Content="+"
-                    Background="#EEEEEE"></Button>
+                    Background="#EEEEEE"
+                    Name="PlusButton" Click="PlusButton_Click"></Button>
             <Button FontSize="35" Grid.Column="2"
                     Grid.Row="4" BorderThickness="0" Content="="
                     Background="#0072C5"
-                    Foreground="White"></Button>
+                    Foreground="White"
+                    Name="EqualsButton" Click="EqualsButton_Click"></Button>
             <Button FontSize="35" Grid.Column="0"
                     Grid.Row="4" BorderThickness="0" Content="."
                     Background="#D1D1D1"></Button>
